@@ -1,6 +1,10 @@
 function amoulton(f,a,b,y0,n)
 % solve the initial-value problem y'=f(t,y), y(a)=y0
 % using Adams-Moulton method of order 4.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 9.5, p286
+
 fprintf('\n Runge-Kutta method of order 4 gives \n\n')
 h=(b-a)/n;
 t=(a:h:b+h);

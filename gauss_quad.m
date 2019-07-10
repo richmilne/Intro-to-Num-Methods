@@ -1,5 +1,9 @@
 function gauss_quad(f,a,b,n)
 % Compute the integral of f on [a,b] using Gauss-Legendre Quadrature
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 8.5, p242
+
 fprintf('\n')
 disp('                   Gauss-Legendre quadrature')
 disp('_________________________________________________________')

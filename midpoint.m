@@ -1,6 +1,10 @@
 function midpoint(f,a,b,y0,n)
 % solve the initial value problem y'=f(t,y), y(a)=y0
 % using the midpoint method.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 9.2, p266
+
 fprintf('\n')
 disp('              Midpoint method')
 disp('_____________________________________________________________________')

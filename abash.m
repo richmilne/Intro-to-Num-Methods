@@ -1,6 +1,10 @@
 function abash(f,a,b,y0,n,order)
 % solve the initial-value problem y'=f(t,y), y(a)=y0
 % using Adams-bashforth method.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 9.4, p277
+
 fprintf('\n Runge-Kutta method gives \n\n')
 h=(b-a)/n;
 t=(a:h:b+h);

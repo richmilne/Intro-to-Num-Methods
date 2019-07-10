@@ -2,7 +2,11 @@ function hyperbolic(f,g,c1,c2,L,T,h,k,alpha)
 % Solve the hyperbolic equation
 % with u(x,0)=f(x), ut(x,0)=g(x).
 % and u(0,t)=c1 and u(L,t)=c2,
-% using a three level explicit method.
+% using a three-level explicit method.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 12.2, p377
+
 n=L/h;m=T/k;
 lambda=alpha*k/h
 z=0:h:L;

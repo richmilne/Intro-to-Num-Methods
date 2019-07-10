@@ -1,5 +1,9 @@
 function romberg(f,a,b,n)
 % Compute the integral of f on [a,b] using Romberg integration.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 8.4, p235
+
 fprintf('\n')
 disp('                    Romberg table')
 disp('_________________________________________________________')

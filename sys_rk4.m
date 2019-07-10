@@ -1,6 +1,10 @@
 function sys_rk4(f,g,a,b,x0,y0,n)
 % solve the system of differential equations x'=f(t,x,y)
 % and y'=g(t,x,y) using Runge-Kutta method of order 4.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 9.6, p295
+
 fprintf('\n')
 disp('    Solution of system of differential equations using RK4')
 h=(b-a)/n;

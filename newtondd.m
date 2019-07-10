@@ -1,5 +1,9 @@
 function newtondd(x,y)
 % Newton divided difference
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 5.1, p140
+
 disp('              Newton divided difference')
 disp('______________________________________________________________________')
 disp('     x        y        f[,]       f[,,]     f[,,,]      ...  ')

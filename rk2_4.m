@@ -1,6 +1,10 @@
 function rk2_4k(f,a,b,y0,n,order)
 % solve the initial-value problem y'=f(t,y), y(a)=y0
 % using Runge-Kutta methods.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 9.3, p267
+
 fprintf('\n')
 disp(['        Runge-Kutta method of order = ',num2str(order)])
 h=(b-a)/n;

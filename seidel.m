@@ -1,5 +1,9 @@
 function seidel(A,b,x0,tol,itmax)
 % Solve the system Ax=b using Gauss-Seidel iteration method.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 4.5, p121
+
 n=length(b);
 x=zeros(n,1);
 fprintf('\n');

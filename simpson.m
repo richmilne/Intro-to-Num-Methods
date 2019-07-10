@@ -1,6 +1,10 @@
 function simpson(f,a,b,n)
 % Compute the integral of a f from a to b using Simpson's
 % composite rule. n must be even.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 8.3, p226
+
 if n/2~=floor(n/2)
    disp(' n must be even')
    break

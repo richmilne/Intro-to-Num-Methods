@@ -1,6 +1,10 @@
 function explsqr(x,y)
 % Construct the least square exponential y=a*exp(b*x)
 % that fits x and y row or column vectors.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 7.3, p192
+
 n=length(x);
 n=length(y);
 z=log(y);

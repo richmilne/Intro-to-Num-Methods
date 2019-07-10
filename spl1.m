@@ -1,5 +1,9 @@
 function spl1(x,y,c)
 % First degree spline.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 6.1, p156
+
 n=length(x);
 for i=n-1:-1:2
    dis=c-x(i);

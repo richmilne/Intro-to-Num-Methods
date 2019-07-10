@@ -1,6 +1,10 @@
 function polylsqr(x,y,m)
 %Construct the least squares polynomial of degree m
 %that fits x and y row or column vectors.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 7.2, p184
+
 n=length(x);
 n=length(y);
 for k=1:2*m+1

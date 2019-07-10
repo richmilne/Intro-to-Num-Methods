@@ -1,6 +1,10 @@
 function euler(f,a,b,y0,n)
 % solve the initial-value problem y'=f(t,y), y(a)=y0
 % using Euler's method.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 9.1, p250
+
 fprintf('\n')
 disp('               Euler method')
 disp('_______________________________________________________')

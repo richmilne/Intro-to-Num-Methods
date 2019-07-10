@@ -1,5 +1,9 @@
 function ngaussel(A,b)
 % Solve the system Ax=b using naive gaussian elimination
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 4.1, p87
+
 n=length(b);
 x=zeros(n,1);
 fprintf('\n');

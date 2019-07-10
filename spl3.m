@@ -1,5 +1,9 @@
 function spl3(x,y,m)
 % Cubic spline
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 6.2, p165
+
 n=length(x);
 for i=1:n-1
    h(i)=x(i+1)-x(i);

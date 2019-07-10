@@ -4,6 +4,10 @@ function laplace(f1,f2,g1,g2,a,n,itmax,tol)
 % and u(0,y)=g1(y) and u(a,y)=g2(y).
 % using the five point difference method.
 % Gauss-Seidel method is used to solve the linear system.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 12.3, p385
+
 h=a/n;
 z=0:h:a;
 h

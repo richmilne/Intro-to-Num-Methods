@@ -1,6 +1,10 @@
 function lagrange(x,y,a)
 % Determine the coefficients of the Lagrange
 % interpolating polynomial p(x)and compute p(a).
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 5.2, p149
+
 n=length(x);
 p=0;
 for k=1:n

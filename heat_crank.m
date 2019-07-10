@@ -3,6 +3,10 @@ function heat_crank(f,c1,c2,L,T,h,k,alpha)
 % with I.C. u(x,0)=f(x)
 % and B.C. u(0,t)=c1, and u(L,t)=c2,
 % using Crank-Nicolson method.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 12.1b, p369
+
 n=L/h;m=T/k; lambda=alpha*k/(h^2)
 z=0:h:L;
 disp('______________________________________________________________________')

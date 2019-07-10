@@ -1,5 +1,9 @@
 function derive(f,h,a,n)
 % Approximate the derivative of a function at x=a
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 8.1, p211
+
 disp('       Derivative table')
 disp('_________________________________________________________')
 disp(' i   h            Di,1        Di,2        Di,3      ...  ')

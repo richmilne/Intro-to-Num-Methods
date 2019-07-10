@@ -1,4 +1,15 @@
 function finitediff(p,q,r,aa,bb,y0,yn,n)
+% Solve a second-order Boundary-Value Problem using the finite difference method.
+%
+% This function finds the solution to the linear BVP (eq 10.1) using the finite
+% difference method described in §10.1. Inputs are functions p(x), q(x) and r(x);
+% the end points 'aa' and 'bb'; the boundary conditions 'y0' and 'yn' and the
+% number of steps 'n'.
+% The input functions 'p', 'q' and 'r' should be defined as m-files.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 10.1, p315
+
 fprintf('\n')
 h=(bb-aa)/n;
 blank='      ';

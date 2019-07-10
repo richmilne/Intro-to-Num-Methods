@@ -2,6 +2,10 @@ function lshoot(f1,f2,a,b,alfa,beta,n)
 % Solve the 2nd order BVP using the linear shooting method
 % f1=-p(x)*u-q(x)*v+r(x)
 % f2=-p(x)*u-q(x)*v
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 10.2, p324
+
 h=(b-a)/n;
 y1=alfa;
 y2=0;

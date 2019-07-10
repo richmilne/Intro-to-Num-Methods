@@ -1,6 +1,10 @@
 function linlsqr(x,y)
 % Construct a least square line y=ax+b
 % that fits x and y row or column vectors.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 7.1, p179
+
 n=length(x);
 n=length(y);
 sumx=sum(x);

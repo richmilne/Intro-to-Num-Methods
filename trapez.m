@@ -1,5 +1,9 @@
 function trapez(f,a,b,n)
 % Compute the integral of a f from a to b using the trapezoid rule
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 8.2, p216
+
 h=(b-a)/n;
 disp('_________________________________________________________')
 disp(['  i         xi          f(xi)         h=',num2str(h) ])
