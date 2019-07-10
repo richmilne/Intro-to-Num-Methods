@@ -26,7 +26,7 @@ bisect.m: Bisection method section 3.1
 derive.m Differentiation section   8.1 
 euler.m: Euler's method section 9.1  
 explsqr.m: Least squares fit, exponential section 7.3 
-false.m: False position method section 3.2  
+falsi.m: False position method section 3.2  
 finitediff.m: Finite difference methods section 10.1 
 fixed.m: Fixed point iteration section 3.6  
 gausselm: Gaussian elimination, scaled pivoting section 4.3  
