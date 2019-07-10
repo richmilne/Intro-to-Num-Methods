@@ -1,6 +1,12 @@
 function bisect(f,a,b,tol,n)
-% Bisection method for solving the nonlinear
-%equation  f(x)=0.
+% Bisection method for solving the non-linear equation f(x)=0.
+%
+% Inputs are the name of the function to be solved, 'f', the endpoints 'a' and
+% 'b', a tolerance 'tol', and the maximum number of iterations, 'n'.
+% The input function f(x) should be defined as an m-file.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 3.1, p39
 a0=a;
 b0=b;
 iter=0;

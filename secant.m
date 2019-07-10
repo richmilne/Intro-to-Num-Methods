@@ -1,6 +1,12 @@
 function secant(f,x0,x1,tol,n)
-% The secant method for solving the nonlinear
-% equation f(x)=0.
+% Find the solution to the non-linear equation f(x)=0 using the secant method.
+%
+% Inputs are a function 'f', initial approximations 'x0' and 'x1', and a
+% tolerance 'tol'.
+% The input function f(x) should be defined as an m-file.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 3.3, p50
 iter=0;
 u=feval(f,x0);
 v=feval(f,x1);

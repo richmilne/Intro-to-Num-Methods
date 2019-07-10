@@ -1,6 +1,13 @@
 function newton2(f,df,x0,m,tol,n)
-% The Modified Newton's method for solving the
-% nonlinear equation f(x)=0.
+% The modified Newton's method for solving the nonlinear equation f(x)=0.
+%
+% Inputs are the name of the function to be solved, 'f', and its derivative,
+% 'df'. 'x0' is an initial approximation, 'm' is the number of multiplicity,
+%'tol' is the tolerance and the maximum number of iterations is givne by 'n'.
+% The input functions f(x) and f'(x) should be defined as m-files.
+
+% Karab & Guenther "An Introduction to Numerical Methods: A MATLAB Approach"
+% Chapman & Hall/CRC, 2002. ISBN 1-58488-281-6    fn. 3.6, p69
 iter=0;
 u=feval(f,x0);
 v=feval(df,x0);
