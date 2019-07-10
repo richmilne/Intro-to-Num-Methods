@@ -25,7 +25,7 @@ end
 u=1;
 v=0;
 for i=1:n
-% RK of order 4 
+% RK of order 4
     x=a+(i-1)*h;
     k1=feval(f2,x,u,v);
     c1=u;
@@ -56,9 +56,8 @@ for i=1:n+1
    s='n';
    if (s=='n')
       fprintf('%6.2f %12.6f %12.6f %12.6f\n',x,y1(i),y2(i),w)
-   else 
+   else
       err=abs(w-s);
       fprintf('%6.2f %12.6f %12.6f %12.6f %12.6f %10.2e\n',x,y1(i),y2(i),w,s,err)
    end
 end
-   

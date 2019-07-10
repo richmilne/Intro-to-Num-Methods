@@ -4,7 +4,7 @@ function simpson(f,a,b,n)
 if n/2~=floor(n/2)
    disp(' n must be even')
    break
-end;   
+end;
 h=(b-a)/n;
 disp('_________________________________________________________')
 disp(['  i         xi          f(xi)         h=',num2str(h) ])

@@ -44,4 +44,4 @@ for i=1:n
    fprintf('%2.0f %12.4f %12.4f% 12.4f %12.4f\n',i-1,z(i),w(i),g,g*w(i));
 end;
 INT=S*(b-a)/2;
-fprintf('\n           The intergral of f(x) is =%16.8f\n',INT);   
+fprintf('\n           The intergral of f(x) is =%16.8f\n',INT);

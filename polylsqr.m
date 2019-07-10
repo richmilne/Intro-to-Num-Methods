@@ -1,5 +1,5 @@
 function polylsqr(x,y,m)
-%Construct the least squares polynomial of degree m 
+%Construct the least squares polynomial of degree m
 %that fits x and y row or column vectors.
 n=length(x);
 n=length(y);
@@ -15,7 +15,7 @@ for i=1:m+1
    for j=1:m+1
       A(i,j)=c(j+i-1);
    end
-end 
+end
 fprintf('\n')
 disp(' The Augmented Matrix of the normal equations, [A b] =')
 fprintf('\n')
@@ -31,8 +31,8 @@ disp('_________________________________________________________')
 for i=1:n
    s=z(1);
    for k=2:m+1
-      s=s+z(k)*x(i)^(k-1); 
-   end 
+      s=s+z(k)*x(i)^(k-1);
+   end
    p(i)=s;
    err(i)=abs(y(i)-p(i));
    fprintf('%6.2f  %6.2f  %12.6f  %12.6f\n',x(i),y(i),p(i),err(i))

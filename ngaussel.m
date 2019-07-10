@@ -36,5 +36,3 @@ C=[A b]
 fprintf('\n');
 disp('   Back substitution gives the vector solution')
 x
-
-

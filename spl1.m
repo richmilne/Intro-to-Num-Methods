@@ -25,5 +25,3 @@ for j=1:n
    end;
    fprintf('\n')
 end
-
- 

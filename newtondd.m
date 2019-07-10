@@ -1,5 +1,5 @@
 function newtondd(x,y)
-% Newton divided difference 
+% Newton divided difference
 disp('              Newton divided difference')
 disp('______________________________________________________________________')
 disp('     x        y        f[,]       f[,,]     f[,,,]      ...  ')
@@ -47,5 +47,3 @@ for i=m:-1:1
    end;
    fprintf('\n')
 end;
-
-

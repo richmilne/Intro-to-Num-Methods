@@ -32,14 +32,8 @@ if (u*v<=0)
       disp('  Division by zero')
    end
 else
-   disp('  The method cannot be applied f(a)f(b)>0')  
-end 
+   disp('  The method cannot be applied f(a)f(b)>0')
+end
 % Plot f(x) in the interval [a,b].
 fplot(f,[a0 b0])
 xlabel('x');ylabel('f(x)'); grid
-
-  
- 
-      
-         
-   

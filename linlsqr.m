@@ -22,8 +22,3 @@ for i=1:n
 end
 err=sum(err.*err);
 fprintf('\n E(a,b) =%12.6f\n',sum(err))
-
-  
-
-
-

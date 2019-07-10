@@ -18,11 +18,4 @@ while (err>tol)&(iter<=n)
 end
 if (iter>n)
    disp('  Method failed to converge')
-end  
-    
-
-  
- 
-      
-         
-   
+end

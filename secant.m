@@ -25,11 +25,4 @@ if ((v-u)==0)
 end
 if (iter>n)
       disp(' Method failed to converge')
-end 
- 
-
-  
- 
-      
-         
-   
+end

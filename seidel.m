@@ -39,16 +39,13 @@ else
  disp(' The solution vectors are:')
  fprintf('\n');
  disp('iter #       0         1         2         3        4        ...')
- fprintf('\n'); 
+ fprintf('\n');
  for i=1:n
    fprintf('x%1.0f =    ',i)
    fprintf('%10.6f',Y(i,[1:k+1]))
    fprintf('\n');
  end
- fprintf('\n'); 
+ fprintf('\n');
  disp(['The method converges after ',num2str(k),' iterations to']);
  x
 end
-
-
-

@@ -1,8 +1,8 @@
 function bisect(f,a,b,tol,n)
-% Bisection method for solving the nonlinear 
+% Bisection method for solving the nonlinear
 %equation  f(x)=0.
 a0=a;
-b0=b; 
+b0=b;
 iter=0;
 u=feval(f,a);
 v=feval(f,b);
@@ -25,18 +25,14 @@ if (u*v<=0)
       iter=iter+1;
       c=(a+b)*0.5;
       err=abs(b-a)*0.5;
-   end 
+   end
    if (iter>n)
       disp('  Method failed to converge')
-   end   
+   end
 else
-   disp('   The method cannot be applied f(a)f(b)>0')  
+   disp('   The method cannot be applied f(a)f(b)>0')
 end
 % Plot f(x) in the interval [a,b].
 fplot(f, [a0 b0])
 xlabel('x');ylabel('f(x)');
 grid
- 
-      
-         
-   

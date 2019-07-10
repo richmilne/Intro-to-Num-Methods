@@ -8,11 +8,11 @@ x=x0;
 y=y0;
 disp('__________________________________________________________________________________')
 disp('    t               x          y        x(t)       y(t)    |x-x(t)|  |y-y(t)|')
-disp('__________________________________________________________________________________')   
+disp('__________________________________________________________________________________')
 fprintf('\n')
 fprintf('%8.2f     %10.3f %10.3f %10.3f %10.3f %8.2f %8.2f\n',a,x,y,x,y,0,0)
 for i=1:n
-  % RK of order 4 
+  % RK of order 4
   t=a+(i-1)*h;
   k1=feval(f,t,x,y);
   c1=feval(g,t,x,y);
@@ -28,20 +28,18 @@ for i=1:n
   % For a system with two Eqns. write the exact solutions
   % if known as xs=xs(t) and ys=ys(t).
   % For a second order IVP write the exact solution
-  % if known as ys=ys(t) and set xs='n'. 
+  % if known as ys=ys(t) and set xs='n'.
   t=t+h;
   xs=3*exp(t)-2*exp(-t);
   ys=3*exp(t)-exp(-t);
   if (xs=='n' & ys=='n')
-    fprintf('%8.2f     %10.3f %10.3f\n',t,x,y) 
+    fprintf('%8.2f     %10.3f %10.3f\n',t,x,y)
   elseif (ys~='n' & xs=='n')
-    err2=abs(ys-y); 
-    fprintf('%8.2f     %10.3f %10.3f %10.3f %10.1e\n', t, x, y, ys, err2) 
-  else      
+    err2=abs(ys-y);
+    fprintf('%8.2f     %10.3f %10.3f %10.3f %10.1e\n', t, x, y, ys, err2)
+  else
     err1=abs(xs-x);
     err2=abs(ys-y);
     fprintf('%8.2f     %10.3f %10.3f %10.3f %10.3f %10.1e %10.1e\n', t, x, y, xs, ys, err1, err2)
-  end   
+  end
 end
-
-

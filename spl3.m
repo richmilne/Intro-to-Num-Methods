@@ -36,6 +36,3 @@ for i=1:n-1
 end
 fprintf('%12.5f %17.5f \n',x(n),y(n))
 fprintf('\n')
-
-
- 

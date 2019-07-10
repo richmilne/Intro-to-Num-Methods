@@ -22,7 +22,3 @@ for i=1:n
    err(i)=abs(yh-y(i));
    fprintf('%6.2f %6.2f %6.2f %12.6f  %12.6f\n',x(i),y(i),z(i),yh,err(i))
 end
-  
-
-
-

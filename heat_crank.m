@@ -1,5 +1,5 @@
 function heat_crank(f,c1,c2,L,T,h,k,alpha)
-% Solve the heat equation 
+% Solve the heat equation
 % with I.C. u(x,0)=f(x)
 % and B.C. u(0,t)=c1, and u(L,t)=c2,
 % using Crank-Nicolson method.
@@ -11,14 +11,14 @@ fprintf('%4.2f         ',z)
 fprintf('\n')
 disp('______________________________________________________________________')
 fprintf('% 4.2f  ',0)
-% Compute the values of u at t=0 
+% Compute the values of u at t=0
 for i=1:n+1
-    u(i)=feval(f,(i-1)*h); 
+    u(i)=feval(f,(i-1)*h);
 fprintf('%10.6f   ',u(i))
 end
 fprintf('\n')
 for i=2:n
-   if (i~=n) 
+   if (i~=n)
       % Compute the subdiagonal of A.
       a(i)=-lambda;
    end
@@ -27,12 +27,12 @@ for i=2:n
    if (i~=n)
       % Compute the superdiagonal of A.
       c(i)=-lambda;
-   end 
+   end
 end
 % save the vecot b in bb.
 bb=b;
 for j=1:m
-  t=j*k; 
+  t=j*k;
   fprintf('% 4.2f  ',t)
 % Compute the coefficient vector Bu.
   for i=2:n
@@ -46,7 +46,7 @@ for j=1:m
      ymult=a(i-1)/bb(i-1);
      bb(i)=bb(i)-ymult*c(i-1);
      d(i)=d(i)-ymult*d(i-1);
-  end 
+  end
   y(n)=d(n)/bb(n);
   for i=n-1:-1:2
      y(i)=(d(i)-c(i)*y(i+1))/bb(i);
@@ -54,16 +54,8 @@ for j=1:m
   % Write the ouput.
      for i=1:n+1
        fprintf('%10.6f   ',y(i))
-     end   
-  fprintf('\n')   
+     end
+  fprintf('\n')
   u=y;
   bb=b;
 end
-
-    
-
-  
- 
-      
-         
-   

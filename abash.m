@@ -48,7 +48,7 @@ elseif (order==3)
     f3=feval(f,t(i-2),y(i-2));
     y(i+1)=y(i)+h*(23*f1-16*f2+5*f3)/12;
 % Enter the exact solution g if known as g=g(x)
-% otherwise set g='n'.   
+% otherwise set g='n'.
     x=t(i+1);
     g='n';
     if (g~='n')
@@ -76,6 +76,3 @@ else
     end
   end
 end
-
-
- 

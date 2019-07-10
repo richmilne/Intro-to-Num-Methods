@@ -15,13 +15,13 @@ for i=1:n-1
    for j=1:m
       x=a+h*(2*j-1);
       S=S+feval(f,x);
-   end   
+   end
    R(i+1,1)=R(i,1)/2+h*S;
    fprintf('%2.0f %8.4f %12.4f',i+1,h,R(i+1,1));
    m=2*m;
    for k=1:i
       R(i+1,k+1)=R(i+1,k)+(R(i+1,k)-R(i,k))/(4^k-1);
       fprintf('%12.4f',R(i+1,k+1));
-   end   
+   end
    fprintf('\n');
 end

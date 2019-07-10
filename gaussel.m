@@ -31,7 +31,7 @@ for k=1:n-1
          A(d(i),j)=A(d(i),j)-m*A(dk,j);
       end
       A(d(i),k)=m;
-   end 
+   end
 end
 % Perform the back substitution.
 for k=1:n-1
@@ -67,5 +67,3 @@ C=[M b]
 fprintf('\n');
 disp('   Back substitution gives the vector solution')
 x
-
-

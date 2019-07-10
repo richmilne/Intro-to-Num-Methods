@@ -35,12 +35,10 @@ for i=4:n
    % otherwise st g='n'.
    x=t(i+1);
    g='n';
-   if (g~='n')   
+   if (g~='n')
       err=abs(g-y(i+1));
       fprintf('%6.2f %12.6f %12.6f %12.6f %12.6f %12.6f %12.6f  %8.2e\n',t(i)+h,f3,f2,f1,f5,y(i+1),g,err)
    else
       fprintf('%6.2f %12.6f %12.6f %12.6f %12.6f %12.6f\n',t(i)+h,f3,f2,f1,f5,y(i+1))
    end
-end   
-
- 
+end

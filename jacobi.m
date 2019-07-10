@@ -11,7 +11,7 @@ for k=1:itmax+1
    for i=1:n
       S=0;
       for j=1:n
-         if (j~=i)   
+         if (j~=i)
            S=S+A(i,j)*x0(j);
          end
       end
@@ -38,7 +38,7 @@ else
  disp(' The solution vectors are:')
  fprintf('\n');
  disp('iter #       0         1         2         3        4        ...')
- fprintf('\n'); 
+ fprintf('\n');
  for i=1:n
    fprintf('x%1.0f =    ',i)
    fprintf('%10.6f',Y(i,[1:k+1]))
@@ -48,5 +48,3 @@ else
  disp(['The method converges after ',num2str(k),' iterations to']);
  x
 end
-
-

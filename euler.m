@@ -23,7 +23,5 @@ for i=1:n
      fprintf('%6.2f %12.6f %12.6f %12.6f  %8.2e\n',t,m,y,g,err)
    else
       fprintf('%6.2f %12.6f %12.6f\n',t,m,y)
-   end   
+   end
 end
-
- 

@@ -20,16 +20,9 @@ while (err>tol)&(iter<=n)&(v~=0)
    pause(1)
    y(iter)=err;
 end
-if (v==0) 
-   disp('  division by zero')     
+if (v==0)
+   disp('  division by zero')
 end
 if (iter>n)
    disp('  Method failed to converge')
 end
-    
-
-  
- 
-      
-         
-   

@@ -18,18 +18,9 @@ while (err>tol)&(iter<=n)&(v~=0)
       iter=iter+1;
       fprintf('%2.0f  %12.6f  %12.6f  %12.6f  %12.6f\n',iter,x0,u,v,err)
 end
-if (v==0) 
-   disp('  division by zero')     
+if (v==0)
+   disp('  division by zero')
 end
 if (iter>n)
    disp('  Method failed to converge')
 end
-  
-
-    
-
-  
- 
-      
-         
-   

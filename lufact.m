@@ -16,8 +16,8 @@ for i=2:n-1
    S=0;
    for k=1:i-1
       S=S+U(k,i)*L(i,k);
-   end   
-   L(i,i)=(A(i,i)-S)/U(i,i);  
+   end
+   L(i,i)=(A(i,i)-S)/U(i,i);
    for j=i+1:n
       S=0;
       for k=1:i-1
@@ -61,5 +61,3 @@ y
 U
 disp('         The vector solution is =')
 x
-
-
