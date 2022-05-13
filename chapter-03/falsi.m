@@ -1,4 +1,4 @@
-function false(f,a,b,tol,n)
+function falsi(f,a,b,tol,n)
 % Regula Falsi ('false position') method for solving non-linear equation f(x)=0.
 %
 % Inputs are the name of the function to be solved, 'f', the endpoints 'a' and
